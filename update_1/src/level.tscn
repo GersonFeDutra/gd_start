@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj5ak2yh8bvrg"]
+
+[ext_resource type="Texture2D" uid="uid://o4lr32imm53a" path="res://assets/sprites/sheet.png" id="1_q4l36"]
+[ext_resource type="PackedScene" uid="uid://b7awvgcdecm6q" path="res://src/bird.tscn" id="2_g1ak3"]
+
+[node name="Level" type="Node2D"]
+metadata/_edit_vertical_guides_ = [45.0]
+metadata/_edit_horizontal_guides_ = [80.0]
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 28, 40, 31)
+
+[node name="Sky" type="Sprite2D" parent="BG"]
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 28, 40, 31)
+
+[node name="Sky2" type="Sprite2D" parent="BG"]
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 28, 40, 31)
+
+[node name="Mountain" type="Sprite2D" parent="BG"]
+position = Vector2(0, 13)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(124, 41, 40, 18)
+
+[node name="Mountain2" type="Sprite2D" parent="BG"]
+position = Vector2(0, 17)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 60, 40, 14)
+
+[node name="Ground" type="Sprite2D" parent="BG"]
+position = Vector2(0, 17)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 60, 40, 14)
+
+[node name="Ground2" type="Sprite2D" parent="BG"]
+position = Vector2(0, 17)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 60, 40, 14)
+
+[node name="Bird" parent="." instance=ExtResource("2_g1ak3")]
+position = Vector2(20, 14)
