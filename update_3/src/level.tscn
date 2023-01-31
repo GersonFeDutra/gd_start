@@ -1,0 +1,217 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj5ak2yh8bvrg"]
+
+[ext_resource type="Texture2D" uid="uid://o4lr32imm53a" path="res://assets/sprites/sheet.png" id="1_q4l36"]
+[ext_resource type="Script" path="res://src/Parallax.gd" id="1_sl2hh"]
+[ext_resource type="PackedScene" uid="uid://b7awvgcdecm6q" path="res://src/bird.tscn" id="2_g1ak3"]
+
+[node name="Level" type="Node2D"]
+metadata/_edit_vertical_guides_ = [45.0, 72.0, 80.0]
+metadata/_edit_horizontal_guides_ = [80.0]
+
+[node name="BG" type="Node2D" parent="."]
+
+[node name="SkyBG" type="Sprite2D" parent="BG"]
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 28, 40, 31)
+
+[node name="SkyBG" type="Sprite2D" parent="BG/SkyBG"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 28, 40, 31)
+
+[node name="SkyBG2" type="Sprite2D" parent="BG"]
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 83, 40, 13)
+
+[node name="SkyBG2" type="Sprite2D" parent="BG/SkyBG2"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 83, 40, 13)
+
+[node name="SkyBG3" type="Sprite2D" parent="BG"]
+position = Vector2(0, 2)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 83, 40, 13)
+
+[node name="SkyBG3" type="Sprite2D" parent="BG/SkyBG3"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 83, 40, 13)
+
+[node name="Parallax" type="Node2D" parent="BG"]
+script = ExtResource("1_sl2hh")
+
+[node name="BG" type="Node2D" parent="BG/Parallax"]
+metadata/loop_offset = 80.0
+
+[node name="Sky" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 22)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 28, 40, 31)
+metadata/motion_offset = 0.05
+
+[node name="Sky" type="Sprite2D" parent="BG/Parallax/BG/Sky"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 28, 40, 31)
+
+[node name="Sky2" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 24)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 28, 40, 31)
+metadata/motion_offset = 0.5
+
+[node name="Sky2" type="Sprite2D" parent="BG/Parallax/BG/Sky2"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 28, 40, 31)
+
+[node name="Mountain" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 38)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(124, 41, 40, 18)
+metadata/motion_offset = 0.5
+
+[node name="Mountain" type="Sprite2D" parent="BG/Parallax/BG/Mountain"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(124, 41, 40, 18)
+
+[node name="Mountain2" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 48)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 60, 40, 14)
+metadata/motion_offset = 1.0
+
+[node name="Mountain2" type="Sprite2D" parent="BG/Parallax/BG/Mountain2"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 60, 40, 14)
+
+[node name="Ground" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 49)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 60, 40, 14)
+metadata/motion_offset = 1.0
+
+[node name="Ground" type="Sprite2D" parent="BG/Parallax/BG/Ground"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 60, 40, 14)
+
+[node name="Ground2" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 54)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 60, 40, 14)
+metadata/motion_offset = 1.5
+
+[node name="Ground2" type="Sprite2D" parent="BG/Parallax/BG/Ground2"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 60, 40, 14)
+
+[node name="Grass" type="Sprite2D" parent="BG/Parallax/BG"]
+position = Vector2(0, 66)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 19, 40, 4)
+metadata/motion_offset = 2.0
+
+[node name="Grass" type="Sprite2D" parent="BG/Parallax/BG/Grass"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 19, 40, 4)
+
+[node name="Floor" type="Node2D" parent="BG/Parallax"]
+metadata/loop_offset = 72.0
+
+[node name="Grass" type="Sprite2D" parent="BG/Parallax/Floor"]
+position = Vector2(0, 70)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 24, 40, 3)
+metadata/motion_offset = 2.0
+
+[node name="Grass" type="Sprite2D" parent="BG/Parallax/Floor/Grass"]
+position = Vector2(36, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(42, 24, 40, 3)
+
+[node name="Floor" type="Sprite2D" parent="BG/Parallax/Floor"]
+position = Vector2(0, 73)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 20, 40, 7)
+metadata/motion_offset = 2.0
+
+[node name="Floor" type="Sprite2D" parent="BG/Parallax/Floor/Floor"]
+position = Vector2(36, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(1, 20, 40, 7)
+
+[node name="Sky" type="Node2D" parent="BG/Parallax"]
+metadata/loop_offset = 80.0
+
+[node name="Cloud" type="Sprite2D" parent="BG/Parallax/Sky"]
+position = Vector2(0, 5)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 83, 40, 13)
+metadata/motion_offset = 0.025
+
+[node name="Cloud" type="Sprite2D" parent="BG/Parallax/Sky/Cloud"]
+position = Vector2(40, 0)
+texture = ExtResource("1_q4l36")
+centered = false
+region_enabled = true
+region_rect = Rect2(83, 83, 40, 13)
+
+[node name="Bird" parent="." instance=ExtResource("2_g1ak3")]
+position = Vector2(22, 21)
+mass = 0.01
