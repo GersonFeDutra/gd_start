@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Flappy Bird"
+run/main_scene="res://src/level.tscn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=360
+window/size/viewport_height=640
+window/size/resizable=false
+window/handheld/orientation=1
+window/stretch/mode="viewport"
+window/stretch/scale=8.0
+
+[editor]
+
+movie_writer/mjpeg_quality=1.0
+movie_writer/movie_file="/home/linky/Videos/rec/movie.png"
+movie_writer/disable_vsync=true
+movie_writer/fps=24
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
