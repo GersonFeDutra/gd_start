@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7awvgcdecm6q"]
+
+[ext_resource type="Script" path="res://src/Bird.gd" id="1_xi4qd"]
+[ext_resource type="Texture2D" uid="uid://o4lr32imm53a" path="res://assets/sprites/sheet.png" id="2_1l1n6"]
+[ext_resource type="AudioStream" uid="uid://ccpa2mgh1qo3i" path="res://assets/sounds/sfxs/rise_jump.wav" id="6_bvows"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t62u5"]
+atlas = ExtResource("2_1l1n6")
+region = Rect2(34, 0, 36, 10)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ic34"]
+radius = 4.12311
+
+[node name="Bird" type="RigidBody2D"]
+process_mode = 3
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_xi4qd")
+jump_force = 24.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_t62u5")
+hframes = 3
+region_rect = Rect2(35, 1, 10, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1ic34")
+debug_color = Color(0.945098, 0.231373, 0, 0.419608)
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bvows")
