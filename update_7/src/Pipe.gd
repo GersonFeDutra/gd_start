@@ -2,7 +2,7 @@
 extends Area2D
 
 ## Variável do comportamento que atualiza a cena com base no valor de `gap`
-var _gap_update: Callable = func(): pass
+var _gap_update: Callable = func(_arg): pass
 ## Distância entre canos
 @export_range(0., 67.) var gap: float = 0:
 	set(value):
@@ -36,7 +36,7 @@ func _process(delta: float):
 signal scored
 @onready var raycast := $RayCast2D as RayCast2D
 
-func _physics_process(delta: float):
+func _physics_process(_delta: float):
 	if raycast.is_colliding():
 		scored.emit()
 		raycast.queue_free()

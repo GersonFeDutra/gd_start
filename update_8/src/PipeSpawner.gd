@@ -79,7 +79,6 @@ func spawn_pipe():
 
 func restart():
 	bird.set_process_input(false)
-	bird.jump_auto = func(_arg): pass
 	
 	await get_tree().physics_frame # Aguarda a física ser processada
 	

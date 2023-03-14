@@ -22,18 +22,18 @@ func _ready():
 const BASE_SPAWN_FREQ: float = 20.
 const FREQ_DEC_DEG: float = 1.
 
-@export_node_path(Sprite2D)
+@export_node_path("Sprite2D")
 var floor_path: NodePath
-@onready var floor := get_node(floor_path) as Sprite2D
+@onready var floor_sprite := get_node(floor_path) as Sprite2D
 
-@export_node_path(Label)
+@export_node_path("Label")
 var score_path: NodePath
 @onready var score_label := get_node(score_path) as Label
 var score: int = 0
 
 func spawn_pipe():
 	var new_pipe: Pipe = PIPE_SCN.instantiate()
-	var floor_virtual_posx := floor.get_meta("virtual_posx") as float
+	var floor_virtual_posx := floor_sprite.get_meta("virtual_posx") as float
 	
 	new_pipe.position.x = SPAWN_POS + \
 			floor_virtual_posx - int(floor_virtual_posx)

@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://src/Parallax.gd" id="1_sl2hh"]
 [ext_resource type="PackedScene" uid="uid://b7awvgcdecm6q" path="res://src/bird.tscn" id="2_g1ak3"]
 [ext_resource type="AudioStream" uid="uid://by1oo6no4hgua" path="res://assets/sounds/sfxs/achievment3.wav" id="2_usri8"]
-[ext_resource type="AudioStream" uid="uid://cysgunwjjksw4" path="res://assets/sounds/sfxs/lose.wav" id="3_2ml3k"]
+[ext_resource type="AudioStream" uid="uid://cd1lli55k3bvk" path="res://assets/sounds/sfxs/lose.wav" id="3_2ml3k"]
 [ext_resource type="Script" path="res://src/PipeSpawner.gd" id="4_pyrkw"]
 [ext_resource type="FontFile" uid="uid://io3ov7uuo761" path="res://assets/fonts/arcadeclassic/ARCADECLASSIC.TTF" id="5_hmgq7"]
 [ext_resource type="Texture2D" uid="uid://dmcxhrg1dgfl7" path="res://assets/sprites/start_button.png" id="6_7cgvi"]

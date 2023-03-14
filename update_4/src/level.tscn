@@ -181,8 +181,8 @@ region_enabled = true
 region_rect = Rect2(42, 24, 40, 3)
 
 [node name="Floor" type="Sprite2D" parent="BG/Parallax/Floor"]
-position = Vector2(0, 73)
 z_index = 1
+position = Vector2(0, 73)
 texture = ExtResource("1_q4l36")
 centered = false
 region_enabled = true

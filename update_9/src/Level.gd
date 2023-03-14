@@ -23,7 +23,6 @@ func _ready():
 func _on_bird_died():
 	var bird = $Bird
 	bird.set_process_input(false)
-	bird.jump_auto = func(_arg): pass
 	
 	await get_tree().physics_frame # Aguarda a física ser processada
 	

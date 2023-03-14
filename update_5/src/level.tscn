@@ -182,8 +182,8 @@ region_enabled = true
 region_rect = Rect2(42, 24, 40, 3)
 
 [node name="Floor" type="Sprite2D" parent="BG/Parallax/Floor"]
-position = Vector2(0, 73)
 z_index = 1
+position = Vector2(0, 73)
 texture = ExtResource("1_q4l36")
 centered = false
 region_enabled = true
@@ -224,14 +224,11 @@ script = ExtResource("4_pyrkw")
 
 [node name="Pipe1" parent="PipeSpawner" instance=ExtResource("5_q67kh")]
 position = Vector2(80, 26)
-gap = 26.0
 
 [node name="Pipe2" parent="PipeSpawner" instance=ExtResource("5_q67kh")]
 position = Vector2(120, 39)
-gap = 26.0
 
 [node name="Pipe3" parent="PipeSpawner" instance=ExtResource("5_q67kh")]
 position = Vector2(160, 52)
-gap = 26.0
 
 [connection signal="deadzone_reached" from="PipeSpawner/Pipe3" to="PipeSpawner" method="spawn_pipe"]
