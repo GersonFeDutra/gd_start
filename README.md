@@ -10,7 +10,7 @@ Projeto de demonstração apresentado para a oficina "Introdução à desenvolvi
 
 # Apresentações
 
-<a href="https://gersonfedutra.github.io/gd_start/presentations/0_intro_cover.png" target="_blank"><img src="presentations/0_intro.png"></a>
+<a href="https://gersonfedutra.github.io/gd_start/presentations/0_intro.pdf" target="_blank"><img src="presentations/0_intro_cover.png"></a>
 
 <a href="https://gersonfedutra.github.io/gd_start/presentations/1_game_dev_concepts.pdf" target="_blank"><img src="presentations/1_game_dev_concepts_cover.png"></a>
 
